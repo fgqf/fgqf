@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="left-aside"></div>
+<div class="page-content">
+
+    <h1 class="page-heading"></h1>
+    <div>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <p class="list-top">
+              <span>{{ post.show }}<em>·</em>{{ post.date | date: "%Y-%m-%-d" }}</span>
+            </p>
+            
+            <h2>
+              <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <div clsss="post-preview">{{ post.excerpt }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

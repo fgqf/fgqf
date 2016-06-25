@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "我曾经问你未来的颜色"
+date:   2016-06-25 11:19:42 +0800
+categories: jekyll update
+show: 风过千帆
+---
+本节介绍三种缓存技术：页面，动作和片段。Rails 默认支持片段缓存。如果想使用页面缓存和动作缓存，要在 Gemfile 中加入 actionpack-page_caching 和 actionpack-action_caching。
+在开发环境中若想使用缓存，要把 config.action_controller.perform_caching 选项设为 true。这个选项一般都在各环境的设置文件（config/environments/*.rb）中设置，在开发环境和测试环境默认是禁用的，在生产环境中默认是开启的。
+
+## 这是 H2
+
+###### 这是 H6
