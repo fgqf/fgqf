@@ -16,7 +16,11 @@ baseurl: "/fgqf" # the subpath of your site, e.g. /blog
 #github_username:  asd
 
 # Build settings
-markdown: kramdown
-kramdown:
-  tables: false
+highlighter: pygments
 
+markdown: redcarpet
+safe: true
+lsi: false
+
+redcarpet:
+  extensions: ["no_intra_emphasis","tables","autolink","fenced_code_blocks"]
